@@ -1,0 +1,339 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Manrope', sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/background1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.navbar{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover:after{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	transform: translateY(-50px);
+	text-align: center;
+	color: white;
+}
+.content h1{
+	margin-top: 100px;
+	font-size: 40px;
+	font-weight: bolder;
+}
+.table{
+	text-align: center;
+}
+.schedule{
+	width: 100%;
+	border-collapse: collapse;
+}
+.schedule td, .schedule th{
+	padding: 12px 15px;
+	border: 1px solid #afafaf;
+	text-align: center;
+}
+.schedule th{
+	background-color: #038175 ;
+}
+.schedule tbody tr:nth-child(even){
+	background-color: #ececec ;
+}
+.hero{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.hero .carousel{
+	width: 300px;
+	margin: 100px auto 0;
+	overflow: visible;
+}
+.carousel img{
+	-webkit-box-reflect:below 10px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
+}
+.contain {
+	min-height: 60vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	width: 90%;
+}
+#contact .contact-item{
+	width: 95%;
+	padding: 20px;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {
+	margin: 10px;
+	margin-bottom: 10px;
+}
+#contact .contact-info h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #03423c ;
+    height: auto;
+    width: 100%;
+
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+#myInput {
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	width: 30%;
+	padding: 10px 10px 10px 20px;
+ 	margin: 12px;
+	border-radius: 15px;
+	border: 1.5px solid black;
+  }
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+.progress-wrap {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+	z-index: 10000;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  
+  .progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+  }
+  
+  .progress-wrap::after {
+	position: absolute;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f062';
+	text-align: center;
+	line-height: 46px;
+	font-size: 18px;
+	color: #1f2029;
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 1;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  
+  .lightScrollIcon::after {
+	color: #ecedf3 !important;
+  }
+  
+  .progress-wrap:hover::after {
+	opacity: 0;
+  }
+  
+  .progress-wrap::before {
+	position: absolute;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f062';
+	text-align: center;
+	line-height: 46px;
+	font-size: 18px;
+	opacity: 0;
+	background-image: linear-gradient(298deg, #da2c4d, #f8ab37);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 2;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  
+  .progress-wrap:hover::before {
+	opacity: 1;
+  }
+  
+  .progress-wrap svg path {
+	fill: none;
+  }
+  
+  .progress-wrap svg.progress-circle path {
+	stroke: #1f2029;
+	stroke-width: 4;
+	box-sizing: border-box;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
